@@ -1,0 +1,88 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="x-ua-compatible" content="ie=7" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <meta name="keywords" content="动画制作、少儿数字出版、数字出版、动画代工、动画软件、动画IP、少儿动画培训、Steam课程、教师课件、动画课件">
+  <meta name="description" content="南京思布特网络科技有限公司是全球领先的互联网动画云引擎技术提供商，首次实现让普通人几分钟就能做出准专业级动画片。作为全球唯一的动画制作开放平台，聚合了大量动漫公司和作者的海量素材资源，同时拥有专业版和移动版两大产品系列，为教育、出版机构提供IP化数字出版解决方案，更开创了少儿动画培训这一致力于提升少儿创意与表达能力的素质教育新品类">
+  <title>云众 - 三分钟做部动画片！</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/wenwang.css' %}">
+  <link rel="shortcut icon" href="http://7xpp5g.com2.z0.glb.qiniucdn.com/o_1bo76b2ca1sq21iik11pf1pvb15gp7.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/swiper-3.4.2.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main1.css' %}">
+</head>
+<body>
+
+  <!--头部  -->
+  <div class="header">
+    <div class="inner">
+      <div class="logo">
+{#        <img src="{% static 'imgs/logo.png' %}" alt="">#}
+      </div>
+      <ul>
+        <li><a href="{% url 'index' %}">首页</a></li>
+        <li><a href="{% url 'anime' %}">动漫</a></li>
+        <li><a href="{% url 'ps' %}">家长监护</a></li>
+        <li><a href="{% url 'dr' %}">纠纷处理</a></li>
+{#        <li><a href="/login.html">登录</a></li>#}
+{#        <li><a href="/reg.html">注册</a></li>#}
+      </ul>
+    </div>
+  </div>
+
+  <div class="jiufen">
+    <div class="jiufen-title">纠纷频道</div>
+    <div class="weight fz18 mt10 ">南京思布特网络科技有限公司在此特别提醒用户</div>
+    <div class="indent fz16 lh150 mt10">在注册、登陆本网站前请务必仔细阅读本《纠纷处理方式》（未成年人应当在其法定监护人陪同下阅读）中的 各个条款，以确保您在享受本网络动漫服务的同时维护自身合法权益：</div>
+    <div class="weight fz18 mt10 ">用户之间纠纷处理方式</div>
+    <div class="indent fz16 lh150 mt10">1.如若本动漫用户之间发生纠纷且无法协商一致的，可向国家相关行政机关或司法机关寻求解决，包括但不限于向公安机关报案、申请仲裁 或向人民法院提起诉讼等。南京思布特网络科技有限公司将会为实名注册用户提供必要的协助和支持，并根据有关行政机关和司法机关的要求承担一定的举证责任或 采取必要措施。</div>
+    <div class="indent fz16 lh150 mt10">2.本动漫用户之间发生纠纷的，也可向南京思布特网络科技有限公司的客服人员投诉并举证。用户需提供与其账号注册信息一致的个人有效身份证件、必要的国 家行政或司法机关文件和其他南京思布特网络科技有限公司要求提供的相关证据。经南京思布特网络科技有限公司审核确认后，可以给予必要的协助和支持。</div>
+    <div class="weight fz18 mt10 ">用户与南京思布特网络科技有限公司之间纠纷处理方式</div>
+    <div class="indent fz16 lh150 mt10">如动漫用户对南京思布特网络科技有限公司的服务有任何异议的，可以向南京思布特网络科技有限公司的客服人员投诉并举证。查证属实的，南京思布特网络科技有限公司将立即更正并按照现行法律规 定给予用户必要的补偿。</div>
+    <div class="weight fz18 mt10 ">交易争议处理</div>
+    <div class="indent fz16 lh150 mt10">【交易争议处理途径】您在南京思布特网络科技有限公司平台交易过程中与其他用户发生争议的，您或其他用户中任何一方均有权选择以下途径解决：</div>
+    <div class="indent fz16 lh150 mt10">（一）与争议相对方自主协商；</div>
+    <div class="indent fz16 lh150 mt10">（二）使用南京思布特网络科技有限公司平台提供的争议调处服务；</div>
+    <div class="indent fz16 lh150 mt10">（三）请求消费者协会或者其他依法成立的调解组织调解；</div>
+    <div class="indent fz16 lh150 mt10">（四）向有关行政部门投诉；</div>
+    <div class="indent fz16 lh150 mt10">（五）根据与争议相对方达成的仲裁协议（如有）提请仲裁机构仲裁；</div>
+    <div class="indent fz16 lh150 mt10">（六）向人民法院提起诉讼。</div>
+    <div class="fz16 lh150 mt10">【平台调处服务】如您依据南京思布特网络科技有限公司平台规则
+      使用南京思布特网络科技有限公司平台的争议调处服务，则表示您认可并愿意履行南京思布特网络科技有限公司
+      平台的客服或大众评审员（“调处方”）作为独立的第三方根据其所了解到
+      的争议事实并依据南京思布特网络科技有限公司平台规则所作出的调处决定（包括调整相关订单的
+      交易状态、判定将争议款项的全部或部分支付给交易一方或双方等）。在南京思布特网络科技有限公司平台调处决定作出前，您可选择上述（三）、（四）、（五）、（六）途
+      径（下称“其他争议处理途径”）解决争议以中止南京思布特网络科技有限公司平台的争议调处服务。
+      如您对调处决定不满意，您仍有权采取其他争议处
+      理途径解决争议，但通过其他争议处理途径未取得终局决定前，您仍应先履行调处决定。</div>
+  </div>
+
+   <div class=footer style="color:#fff;height:100px;">
+      <div class="tips1">健康动漫忠告：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防上当受骗，适度动漫益脑，沉迷游戏伤身，合理安排时间，享受健康生活</div>
+      <div class="tips2">xxxxxxxx有限公司 &nbsp &nbsp 电话：xxxxxxx &nbsp &nbsp  地址：xxxxxxx &nbsp &nbsp ©2019&nbsp苏ICP备18066592号</div>
+  </div>
+
+</body>
+<script src="{% static 'js/jquery-1.8.3.min.js' %}"></script>
+<script>
+  $('#reg').click(function(){
+    window.location.href = './reg.html'
+  })
+  $('#login').click(function(){
+    window.location.href = './login.html'
+  })
+  $('#btn').click(function(){
+   window.open("http://pro.piyingke.com/")
+  })
+</script>
+</html>

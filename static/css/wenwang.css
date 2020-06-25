@@ -1,0 +1,532 @@
+body{
+    font-family: -apple-system,"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 60px;
+    background: rgba(34,38,47,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    min-width: 1200px;
+    overflow: auto;
+}
+
+.header .inner {
+    position: relative;
+    height: 60px;
+    margin: 0 auto;
+    width: 1200px;
+    min-width: 1200px;
+
+}
+.header .inner .logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.header .inner .logo img{
+    height: 40px;
+    float: left;
+}
+.header .inner ul{
+    float: left;
+    height: 40px;
+    margin-left:300px;
+    margin-top: 10px;
+}
+.header .inner ul li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    color: #ffffff;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.header .inner ul li:hover {
+    font-weight: bold;
+}
+.header .inner ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header .inner .btn {
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 20px;
+    /* position: absolute; */
+    /* right: 10px; */
+    /* top: 15px; */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+.music-list {
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.music-list .title {
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #928E8E;
+}
+.music-list .item {
+    float: left;
+    width: 700px;
+    margin-top: 20px;
+}
+.music-list .item .title1{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.music-list .item ul li{
+   cursor: pointer;
+   list-style: none;
+   margin-top: 35px;
+   margin-left: 20px;
+   position: relative;
+   padding-left: 60px;
+}
+.music-list .item ul li:hover{
+    color: #B25151;
+}
+.music-list .item ul li .t{
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+.music-list .item ul li .n{
+    font-size: 12px;
+    color: #A39B9B;
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+ }
+ .music-list .item ul li .p{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 0px;
+    overflow: hidden;
+}
+.music-list .item ul li .p img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+
+.game {
+    overflow: hidden;
+    padding-top: 100px;
+    background: #2f1401;
+
+}
+.game div {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.game div img{
+    margin: 0 auto;
+}
+.appLoad {
+    position: absolute;
+    display:block;
+	/*height: 180px;*/
+    left: 25%;
+    position: absolute;
+    top: 180px;
+    /*width: 500px;*/
+	z-index:120;
+}
+
+.changeAmountUl{
+    list-style: none;
+    overflow: hidden;
+}
+.changeAmountUl>li{
+    float: left;
+    color: #d8d8d8;
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #d8d8d8;
+    margin-right: 10px;
+}
+.changeAmountUl>li:nth-child(8),.changeAmountUl>li:nth-child(5),.changeAmountUl>li:nth-child(6),.changeAmountUl>li:nth-child(7){
+    margin-top: 20px;
+}
+.app-active{
+    color: red !important;
+    border-color: red !important;
+}
+#payNum{
+    color: red;
+    font-size: 22px;
+}
+.pay-btn{
+    font-size: 18px;
+    color: #ffffff;
+    width: 120px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    background-color: #dd006a;
+    border: 1px solid #dd006a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donghua {
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.donghua .title {
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #928E8E;
+}
+.donghua-item {
+    width:300px;
+    margin:0 50px;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 250px;
+}
+.donghua-item img {
+    width:300px;
+}
+.donghua-item div {
+    width:300px;
+    text-align: center;
+    margin-top: 10px;
+}
+.item-btn-1{
+    width:300px;
+    margin:0 50px;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 250px;
+}
+.item-btn-1 img {
+    width:300px;
+    height: 200px;
+}
+.item-btn-1 div {
+    width:300px;
+}
+.mask-pic {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.show-pic{
+    position: absolute;
+    top:100px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #666666;
+    background: #ffffff;
+    left: 50%;
+    margin-left: -250px;
+}
+.close_btn {
+    text-align: right;
+    font-size: 32px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.show1 {
+   overflow: auto;
+   height: 450px;
+}
+.show1 img {
+    width: 100%;
+}
+
+
+.bisai {
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top:40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.bisai-banner {
+    overflow: hidden;
+}
+.bisai-banner img {
+    width: 100%;
+    float: left;
+}
+.title-bisai{
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #928E8E;
+}
+
+.jianhu {
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top:100px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.title-jianhu{
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #928E8E;
+}
+.jiufen{
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top:100px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.jiufen-title{
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #928E8E;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+    position: relative;
+}
+.banner .banner1 {
+    float: left;
+    width: 100%;
+    min-width: 1200px;
+}
+.banner .ip {
+    position: absolute;
+    z-index: 100;
+    bottom: 140px;
+    left: 120px;
+    animation: change 1s;
+}
+.banner_mobile {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer div{
+    text-align: center;
+    margin-top: 20px;
+}
+.tips1 {
+    font-size: 18px;
+}
+.tips2{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.weight {
+    font-weight: bold;
+}
+.fz24{
+    font-size: 24px;
+}
+.indent {
+    text-indent: 20px;
+}
+.lh150{
+    line-height: 150%;
+}
+.fz20{
+    font-size: 20px;
+}
+.fz18{
+    font-size: 18px;
+}
+.fz16{
+    font-size: 16px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.color_blue{
+    color: blue;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.bt {
+    border-top: 1px solid #666;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.pt20 {
+    padding-top: 20px;
+}
+.reg_login{
+    float: right;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 150px;
+}
+.reg_login div{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.reg_login div:hover{
+    font-weight: bold;
+}
+
+.reg {
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top:100px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.title-reg{
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #928E8E;
+    margin-bottom: 50px;
+}
+.reg-item {
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 40px;
+    margin-top:5px;
+    overflow: hidden;
+}
+.reg-item input,span{
+    float: left;
+    margin-left: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.reg-item .lable {
+    width: 100px;
+    text-align:right;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.reg-item input {
+    width: 200px;
+    height: 30px;
+    color: #666666;
+    margin-left: 20px;
+}
+.tips_reg{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.tips_reg span{
+    float: none;
+}
+.submit_btn{
+    margin-left: 150px;
+    width:50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #dd4441;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.pass_word {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.pass_word-title {
+    width: 400px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 70px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+.pass_word-title span{
+    float:right;
+    line-height: 30px;
+    height: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.inner_pass {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 100px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    overflow: auto;
+}

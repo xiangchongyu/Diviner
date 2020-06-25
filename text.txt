@@ -1,0 +1,168 @@
+tanzhou_dongman 它是django框架的总工程目录
+                    存放django工程的所有文件
+
+    anime app应用
+        __init__.py 是声明app是django框架的一个模块
+                                就是让django能找到app并且执行
+
+        admin.py 后台管理系统的配置文件
+                        原始的后台管理系统文件没有写任何代码
+                        这个文件是需要我们之后自行配置的
+
+        apps.py 让django的配置文件(settings.py)去找到这个app应用
+
+        models.py 编写我们的数据模型的
+                            直接跟数据库做交互的
+                            mysql
+                                表结构
+                                    sql语言
+
+                                可以利用orm系统去自动的让数据库
+                                    创建表
+
+        tests.py 做单元测试的
+
+        views.py django的一个核心
+                    控制页面的逻辑跳转 用户交互
+
+
+tanzhou_dongman
+    存放一些配置文件
+
+    settings.py 它是django框架的总配置文件
+
+    urls.py 配置网站的地址(域名)
+
+    wsgi.py 做网站部署的
+
+
+第一步
+    去settings.py中配置网站默认语言 支持国际化 修改国际时间
+
+第二步
+    去创建apps文件夹 将anime这个app拖到apps文件夹里面
+
+第三步
+    去settings.py中配置apps这个文件夹 让django能找到这个文件夹
+        sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+
+第四步
+    让apps这个文件夹变成蓝色 让pycharm这个编辑器能找到这个文件夹
+        选中你的apps文件夹 右键    选择MDA 再选中SR
+
+第五步
+    去创建一个文件夹 static 先选中工程总目录去创建
+        这个文件夹是存放咱们的静态文件的(js，css，img，font...)
+
+
+第六步
+    去settings.py这个配置文件去配置静态文件夹，让django框架能找到这个文件夹
+
+        STATICFILES_DIRS = [
+            os.path.join(BASE_DIR, 'static'),
+            ]
+
+第七步
+    把静态文件和静态模板复制到咱们项目中
+
+第八步
+    去编写views.py 文件
+        它能控制页面跳转逻辑以及页面显示
+
+第九步
+    再anime app中创建一个文件(urls.py) 是这个app的分路由
+
+
+第十步
+    去总路由(配置文件夹下面的urls.py)中配置分路由
+
+
+
+
+学费：
+    7880
+
+上课模式：
+    线上[互联网直播]
+
+上课时间：
+    晚上的八点到晚上的十点半
+    从星期一到星期六
+
+学习内容：
+    linux系统
+    python基础
+    python进阶
+        数据库
+        多线程
+        socket
+        面向对象
+
+    web前端内容
+        html
+        css
+        js
+        jquery
+
+        ajax 异步请求
+
+    框架部分
+        django
+            框架安装
+            框架启动
+
+            MTV的编程思维
+
+            模型层
+            模板层
+            控制器层
+
+            from表单
+
+            你就可以去试着写项目了
+
+                老师带着你们去做
+                    咨询类新闻网站
+
+                        新闻数据渲染 数据库部分
+
+                        用户权限管理 你是什么身份的用户就看什么新闻
+
+                        用户登录逻辑
+                            登出
+                            注册
+                                验证码注册
+
+                        前后端分离的
+
+                            就是从数据库取出的数据会序列化成json数据通过
+                            ajax传到前端并完成渲染
+        爬虫部分
+            爬虫概念
+            爬虫流程
+            http请求
+            http相应
+
+            fidder 抓包工具
+
+            urllib 它是爬虫的一个雏形 标准库
+
+            requests 它是第三方的爬虫库
+
+            网页选择器
+                xpath
+                bs4
+                re
+
+                pyquery
+
+        scrapy 框架部分 重型框架
+            支持异步爬取
+            支持分布式
+            支持多线程
+
+
+
+
+
+
